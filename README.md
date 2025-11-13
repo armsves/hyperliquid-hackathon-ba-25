@@ -1,0 +1,78 @@
+# Build What’s Next on HyperEVM
+
+Welcome to the **HyperEVM Hackathon** — a 48-hour sprint to **build, create, and grow the Hyperliquid ecosystem**.
+Whether you’re writing smart contracts, designing integrations, or sparking cultural movements — this is your chance to **shape the future of HyperEVM**.
+
+---
+
+## Hackathon Details
+
+| Detail          | Info                                                 |
+| --------------- | ---------------------------------------------------- |
+| **Duration**    | 48 hours                                             |
+| **Access**      | 24/7 venue access (secured overnight)                |
+| **Teams**       | Up to 5 members                                      |
+| **Submissions** | Pull Request (PR) to this repository before deadline |
+| **Judging**     | Each bounty judged by sponsor + external mentor      |
+
+---
+
+## Sponsored Bounties
+
+There are **four sponsored tasks** and **one wildcard track** open to any idea that pushes the HyperEVM ecosystem forward.
+
+Each sponsor will post their **specific task and bounty** in the `/tasks/` folder.
+
+---
+
+## Rules
+
+1. **Team Formation**
+
+   - Max **5 participants per team**.
+   - Teams are self-organized; solo builders welcome.
+
+2. **Bounty Ownership**
+
+   - Each **sponsor** selects a **winner** for their bounty with **one external mentor**.
+
+3. **Submission Process**
+
+   - Fork this repository.
+   - Create a new branch with your project name.
+   - Add your project folder under `/submissions/your-project-name/`.
+   - Submit a **Pull Request** before the hackathon deadline.
+   - Include a `README.md` in your folder describing your idea, tech stack, and demo.
+
+4. **Conduct**
+
+   - Be respectful.
+   - Collaborate and help others.
+   - No plagiarism or use of pre-built projects.
+
+---
+
+## Repository Structure
+
+```
+/tasks/
+  looping-collective.md
+  gluex.md
+  hypurrfi.md
+  lava.md
+  wildcard.md
+
+/submissions/
+  your-project-name/
+    README.md
+    demo/
+    contracts/
+```
+
+---
+
+## Let’s Build What’s Next
+
+HyperEVM is your canvas.
+Build fast, think bold, and **push the boundaries of on-chain coordination**.
+Good luck, and see you on the leaderboard.
