@@ -265,13 +265,17 @@ export async function getAddressTransactions(address: string, blockCount: number
       
       if (block && block.transactions) {
         for (const tx of block.transactions) {
-          if (tx.from?.toLowerCase() === address.toLowerCase() || 
-              tx.to?.toLowerCase() === address.toLowerCase()) {
-            transactions.push({
-              ...tx,
-              timestamp: parseInt(block.timestamp, 16),
-              blockNumber: blockNum
-            });
+          // Check if tx is a Transaction object (not a string hash)
+          if (typeof tx === "object" && tx !== null && "from" in tx) {
+            const transaction = tx as Transaction;
+            if (transaction.from?.toLowerCase() === address.toLowerCase() || 
+                transaction.to?.toLowerCase() === address.toLowerCase()) {
+              transactions.push({
+                ...transaction,
+                timestamp: parseInt(block.timestamp, 16),
+                blockNumber: blockNum
+              });
+            }
           }
         }
       }
